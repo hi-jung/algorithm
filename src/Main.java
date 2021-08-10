@@ -1,3 +1,4 @@
+import Heap.DiskSolution;
 import Heap.ScovileSolution;
 
 public class Main {
@@ -5,12 +6,12 @@ public class Main {
 
     public static void main(String[] args) {
         int K = 7;
-        int[] scovile = new int[] {1,2,3,9,10,12};
+        int[][] list = new int[][] {{0,3},{1,9},{2,6}};
 
-        ScovileSolution scovileSoultion = new ScovileSolution();
+        DiskSolution diskSolution = new DiskSolution();
 
         System.out.println("================= Result ================");
-        System.out.println(scovileSoultion.solution(scovile, K));
+        System.out.println(diskSolution.solution(list));
         System.out.println("=========================================");
     }
 }
