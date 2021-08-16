@@ -1,3 +1,5 @@
+import Challenge.ScoreSolution;
+import Hash.MarathonSolution;
 import Heap.DiskSolution;
 import Heap.ScovileSolution;
 
@@ -5,13 +7,13 @@ public class Main {
 
 
     public static void main(String[] args) {
-        int K = 7;
-        int[][] list = new int[][] {{0,3},{1,9},{2,6}};
+        String[] participant = new String[]{"mislav", "stanko", "mislav", "ana"};
+        String[] completion = new String[]{"stanko", "ana", "mislav"};
 
-        DiskSolution diskSolution = new DiskSolution();
+        MarathonSolution marathonSolution = new MarathonSolution();
 
         System.out.println("================= Result ================");
-        System.out.println(diskSolution.solution(list));
+        System.out.println(marathonSolution.solution(participant, completion));
         System.out.println("=========================================");
     }
 }
